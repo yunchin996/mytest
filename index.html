@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本垂直居中</title>
 
-	</head>
-	<body>
-	<p>hello, my first page!</p>
-	</body>
-</html
+    <!-- icon-logo -->
+    <link rel="shortcut icon" type="image/ico" href="https://c-ssl.dtstatic.com/uploads/blog/202208/07/20220807223049_72731.thumb.1000_0.jpeg"> 
+
+    <style type="text/css">
+        *{
+            /* 清除浏览器默认设置 */
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+
+            height: 100%;
+            /* 其图片高度 */
+            background: url(https://w.wallhaven.cc/full/3l/wallhaven-3lk9qd.jpg) center center;
+            background-size: cover;/*保存长宽比  宽高短覆盖*/
+            background-repeat: no-repeat;
+
+            position: relative;
+        }
+        #container{
+            width: 100%;
+            text-align: center;
+            border: 10px solid red;
+            box-sizing: border-box;
+            /*宽高 -（border + padding） */
+
+            /* 绝对定位 */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            /* CSS top、left属性基于父元素的大小。 transform属性基于目标元素的大小 */
+        }
+    </style>
+</head>
+<body>
+<h1 id="container">let's learn html5 文本垂直居中</h1>
+<script type="text/javascript"></script>
+</body>
+</html>
